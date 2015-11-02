@@ -1,0 +1,4 @@
+var structzmf_1_1proto_1_1_static_descriptor_initializer___framework_proto__2eproto =
+[
+    [ "StaticDescriptorInitializer_FrameworkProto_2eproto", "structzmf_1_1proto_1_1_static_descriptor_initializer___framework_proto__2eproto.html#acf9cbce0f56a766e333bff5fcc22f692", null ]
+];

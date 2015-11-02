@@ -1,0 +1,15 @@
+dummy
+jmf
+jmf.config
+jmf.config.implementation
+jmf.core
+jmf.data
+jmf.data.builder
+jmf.discovery
+jmf.discovery.implementation
+jmf.language
+jmf.messaging
+jmf.messaging.implementation
+jmf.module
+jmf.proto
+jmf.util
