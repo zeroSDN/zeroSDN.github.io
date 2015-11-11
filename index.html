@@ -138,46 +138,38 @@
 						We felt that many controllers are either <em>too monolithic</em>,
 						<em>too hard to understand</em>, or <em>not scalable enough</em>.
 					</p>
-					<p class="lead">This is why we created a controller that:</p>
+					<p class="lead">This is why we created a controller which does not have these limitations.</p>
 					</br>
 					<h3>
-						<a id="Is_highly_modularized_16"></a>Is highly modularized
+						<a id="Is_highly_modularized_16"></a>Highly modularized, distributed design
 					</h3>
-					<p class="lead">Every functionality in ZeroSDN is a single artifact running
-						independently, no matter if on the same machine or distributed;
-						there is no huge monolithic controller instance.</p>
+					<p class="lead">Rather than using a monolithic design, ZeroSDN encapsulates controller functions into modules communicating through the ZeroMQ high-perfomance messaging library. These modules can run on a single host or can be distributed between several hosts. Modules can also be added to or removed from a running controller easily.</p>
 					</br>
 					<h3>
-						<a id="Can_run_on_any_hardware_20"></a>Can run on any hardware
+						<a id="Can_run_on_any_hardware_20"></a>Lightweight
 					</h3>
-					<p class="lead">We deployed the full controller on a single Raspberry Pi, in
-						a cloud environment and even directly on physical SDN switches.</p>
+					<p class="lead">ZeroSDN can run on hosts spanning a large performance range including a simple Raspberry Pi, cloud servers, or even on a switch itself.</p>
 					</br>
 					<h3>
-						<a id="Is_language_independent_24"></a>Is language independent
+						<a id="Is_language_independent_24"></a>Language independent
 					</h3>
-					<p class="lead">Currently supported languages are Java and C++.</p>
+					<p class="lead">Out of the box, ZeroSDN supports modules implemented in Java or C++. However, since ZeroSDN utilizes ZeroMQ as messaging library <em>(which supports many more languages!)</em> support for other languages can be added to ZeroSDN easily.</p>
 					</br>
 					<h3>
-						<a id="Can_be_easily_understood_and_extended_28"></a>Can be easily
-						understood and extended
+						<a id="Can_be_easily_understood_and_extended_28"></a>Extensive documentation
 					</h3>
-					<p class="lead">We made sure to document all functionality thoroughly.</p>
+					<p class="lead">We made sure to <a
+							href="https://github.com/zeroSDN/ZSDN-Controller/wiki">document</a> all functionality thoroughly to facilitate the usage and extension of ZeroSDN.</p>
 					</br>
 					<h3>
-						<a id="Avoids_unecessary_eventdelivery_32"></a>Avoids unecessary
-						event-delivery
+						<a id="Avoids_unecessary_eventdelivery_32"></a>Flexible Event Filtering
 					</h3>
-					<p class="lead">ZeroSDN filters events at sending modules using hierarchical
-						topic-based publish/subscribe. If, for example, no module is
-						subscribed to UDP packets from the network, the switches will not
-						even attempt to deliver them.</p>
+					<p class="lead">ZeroSDN uses the publish/subscribe paradigm to filter events. We designed a hierarchical pub/sub schema making it easy for modules to receive just the events that are relevant for the module. Thanks to ZeroMQ, events can be filtered at high speed. Here is a simplified example for Packet-In messages from switches:</br></br><em>A module subscribed to IPv4 packets will not receive ARP packets, but will receive both UDP and TCP packets.</em></p>
 					</br>
 					<h3>
-						<a id="Performs_very_well_37"></a>Performs very well
+						<a id="Performs_very_well_37"></a>High performance
 					</h3>
-					<p class="lead">While ZeroSDN can be run locally on one machine without a
-						problem, it really plays to its advantage once distributed:</p>
+					<p class="lead">The distributed design of ZeroSDN based on the high-performance messaging library ZeroMQ helps it to scale well with the number of hosts:</p>
 					</br>
 					<p class="lead">
 						<img  height="100%" width="100%" src="http://alki.square7.de/zsdn/throughput_4_node.png"
