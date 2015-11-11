@@ -3,27 +3,30 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
 
-    <title>zeroSDN | Distributed SDN Controller</title>
+<title>ZeroSDN | Distributed SDN Controller</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/landing-page.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+<!-- Custom Fonts -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"
+	type="text/css">
+<link
+	href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+	rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
@@ -32,167 +35,209 @@
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="#"><img src="img/zsdn.png" style="max-height:100%;"></img></a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#controller">Controller</a>
-                    </li>
-                    <li>
-                        <a href="#framework">Framework</a>
-                    </li>
-                    <li>
-                        <a href="#doku">Documentation</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+	<!-- Navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top topnav"
+		role="navigation">
+		<div class="container topnav">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand topnav" href="#"><img src="img/zsdn.png"
+					style="max-height: 100%;"></img></a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
+	</nav>
 
 
-    <!-- Header -->
-   
-    <div class="intro-header">
-        <div class="container">
+	<!-- Header -->
 
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>zeroSDN</h1>
-                        <h3>A modular, distributed SDN-Controller</h3>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="https://github.com/zeroSDN" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+	<!-- /.intro-header -->
 
-        </div>
-        <!-- /.container -->
+	<!-- Page Content -->
 
-    </div>
-    <!-- /.intro-header -->
+	<a name="controller"></a>
+	<div class="content-section-b">
 
-    <!-- Page Content -->
+	
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="clearfix"></div>
+					
+					<h1>
+						<a id="What_is_ZeroSDN__0"></a>What is ZeroSDN ?
+					</h1>
+					<p class="lead">
+						Zero Software Defined Networking(ZSDN) is a distributed SDN
+						controller. It consists of multiple independent modules that are
+						connected by a messaging middleware, ZMQ (see <a
+							href="http://zeromq.org">http://zeromq.org</a>). Currently
+						ZeroSDN supports OpenFlow versions 1.0 und 1.3.
+					</p>
+					
+					<p class="lead">
+						ZeroSDN was developed by 13 students during a software engineering
+						project at the Distributed Systems department (see <a
+							href="https://www.ipvs.uni-stuttgart.de/abteilungen/vs?__locale=en">https://www.ipvs.uni-stuttgart.de/abteilungen/vs?__locale=en</a>)
+						at the University of Stuttgart, Germany.
+					</p>
+					
+					
+					<p class="lead">
+						
+					<h2 class="section-heading">
+						Available on Github:
+						</h2>
+						<ul class="list-inline intro-social-buttons">
+							<li><a href="https://github.com/zeroSDN"
+								class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i>
+									<span class="network-name">Github</span></a></li>
+						</ul>
+						
+						<ul class="list-inline intro-social-buttons">
+							<li><a href="https://github.com/zeroSDN/ZSDN-Controller/wiki"
+								class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i>
+									<span class="network-name">Wiki</span></a></li>
+						</ul>
+					</p>
+					
+					</br>
+					
+					<h2 class="section-heading">
+						<a id="Overview_6"></a>Overview
+					</h2>
+					
+					<p class="lead">
+						<img src="http://alki.square7.de/zsdn/MessageBus_modules.png"
+							alt="Overview" height="100%" width="100%">
+					</p>
+					<h1>
+						<a id="Why_yet_another_SDNController_10"></a>Why yet another
+						SDN-Controller?
+					</h1>
+					<p class="lead">
+						We felt that many controllers are either <em>too monolithic</em>,
+						<em>too hard to understand</em>, or <em>not scalable enough</em>.
+					</p>
+					<p class="lead">This is why we created a controller that:</p>
+					<h3>
+						<a id="Is_highly_modularized_16"></a>Is highly modularized
+					</h3>
+					<p class="lead">Every functionality in ZeroSDN is a single artifact running
+						independently, no matter if on the same machine or distributed;
+						there is no huge monolithic controller instance.</p>
+					<h3>
+						<a id="Can_run_on_any_hardware_20"></a>Can run on any hardware
+					</h3>
+					<p class="lead">We deployed the full controller on a single Raspberry Pi, in
+						a cloud environment and even directly on physical SDN switches.</p>
+					<h3>
+						<a id="Is_language_independent_24"></a>Is language independent
+					</h3>
+					<p class="lead">Currently supported languages are Java and C++.</p>
+					<h3>
+						<a id="Can_be_easily_understood_and_extended_28"></a>Can be easily
+						understood and extended
+					</h3>
+					<p class="lead">We made sure to document all functionality thoroughly.</p>
+					<h3>
+						<a id="Avoids_unecessary_eventdelivery_32"></a>Avoids unecessary
+						event-delivery
+					</h3>
+					<p class="lead">ZeroSDN filters events at sending modules using hierarchical
+						topic-based publish/subscribe. If, for example, no module is
+						subscribed to UDP packets from the network, the switches will not
+						even attempt to deliver them.</p>
+					<h3>
+						<a id="Performs_very_well_37"></a>Performs very well
+					</h3>
+					<p class="lead">While ZeroSDN can be run locally on one machine without a
+						problem, it really plays to its advantage once distributed:</p>
+					<p class="lead">
+						<img  height="100%" width="100%" src="http://alki.square7.de/zsdn/throughput_4_node.png"
+							alt="ZeroSDN StartUpSelector initial screen"> <em>Tested
+							using Cbench. 16 Switches, throughput mode</em>
+					</p>
+					<h2 class="section-heading">
+						<a id="How_to_installuse_ZeroSDN_44"></a>How to install/use
+						ZeroSDN?
+					</h2>
+					<p class="lead">
+						It’s easy, take a look at <a
+							href="https://github.com/zeroSDN/ZSDN-Controller/wiki">https://github.com/zeroSDN/ZSDN-Controller/wiki</a>
+						for more information.
+					</p>
+					<h1>
+						<a id="Support_48"></a>Support
+					</h1>
+					<p class="lead">
+						If you need help, don’t hesitate to contact us: <a
+							href="mailto:contact.zsdn@gmail.com">contact.zsdn@gmail.com</a>
+					</p>
+					<h1>
+						<a id="Participate_53"></a>Participate
+					</h1>
+					<p class="lead">ZeroSDN is an open source project. You have own ideas or
+						plans concerning ZSDN or found bugs? Share them with us.</p>
+					<p class="lead">
+						You can create pull requests at <a
+							href="https://github.com/zeroSDN/ZSDN-Controller/pulls">https://github.com/zeroSDN/ZSDN-Controller/pulls</a>
+						or contact us at <a href="https://github.com/zeroSDN">https://github.com/zeroSDN</a>
+					</p>
+					<p class="lead">We are looking forward to your participation!</p>
+					<h1>
+						<a id="Licence_61"></a>Licence
+					</h1>
+					<p class="lead">
+						ZeroSDN is licenced under the Apache License Version 2.0, see <a
+							href="http://LICENCE.md">LICENCE.md</a>
+					</p>
 
-    <a name="controller"></a>
-    <div class="content-section-a">
+				</div>
+			</div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">ZeroSDN Controller</h2>
-                    <p class="lead">Zero Software Defined Networking (ZeroSDN) is a distributed SDN controller. It consists of multiple independent modules that are connected by a messaging middleware, <a href="http://zeromq.org">ZMQ</a>.<br/><br/>Currently, ZeroSDN supports OpenFlow version 1.0 und 1.3. <br/><br/>Our  <a href="https://github.com/zeroSDN/ZSDN-Controller/wiki">wiki</a> contains all information to get you started.<br/><br/>ZeroSDN is licenced under the Apache License Version 2.0.<br/><br/>
+		</div>
+		<!-- /.container -->
 
-The excecution of each module is controlled by an instance of the Zero Module Framework (ZMF). ZMF is a framework for distrubed, language independent module execution. Currently there are two implementations of ZMF: <a href="https://github.com/zeroSDN/ZMF">ZMF</a> for C++ and JMF for Java <a href="https://github.com/zeroSDN/JMF">JMF</a>.<br/><br/>
+	</div>
+	<!-- /.content-section-a -->
 
-ZeroSDN was developed during a student project at the Distributed Systems department at the University of Stuttgart.</p>
-                </div>
-            </div>
 
-        </div>
-        <!-- /.container -->
 
-    </div>
-    <!-- /.content-section-a -->
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class="list-inline">
+						<li><a href="#">Home</a></li>
+						<li class="footer-menu-divider">&sdot;</li>
+					</ul>
+					<p class="copyright text-muted small">Copyright &copy; zeroSDN
+						team 2015. All Rights Reserved</p>
+				</div>
+			</div>
+		</div>
+	</footer>
 
-    <a  name="framework"></a>
-    <div class="content-section-b">
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
 
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Zero Module Framework</h2>
-                    <p class="lead">
-                        ZMF, the Zero Module Framework, is a framework for modular, distributed systems build on top of ZMQ. The ZeroSDN Controller is build on top of ZMF, but it is designed to be useable for a wider range of applications.</p>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-b -->
-
-    <a  name="doku"></a>
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Dokumentation</h2>
-                    <p class="lead">Doxygen ZMF: <a href="doku/Doxygen/ZMF/html/index.html">Link</a><br/>
-                                    Javadoc JMF: <a href="doku/Javadoc/jmf/index.html">Link</a><br/>
-                                    Doxygen Controller: <a href="doku/Doxygen/Modules/html/index.html">Link</a></p>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-   
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#controller">Controller</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#framework">Framework</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#doku">Dokumentation</a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted small">Copyright &copy; zeroSDN team 2015. All Rights Reserved</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
 
 </body>
 
